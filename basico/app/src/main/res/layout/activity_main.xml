@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Campo 1 -->
+    <EditText
+        android:id="@+id/edtId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:layout_margin="16dp"/>
+
+    <!-- Campo 2 -->
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtId"
+        android:layout_margin="16dp"
+        android:hint="Nome"/>
+
+    <!-- Campo 3 -->
+    <EditText
+        android:id="@+id/edtTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:layout_margin="16dp"
+        android:hint="Telefone"/>
+
+    <!-- Botões na parte inferior -->
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <!-- Botão 1 -->
+        <Button
+            android:id="@+id/btSalvar"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Salvar"/>
+
+        <!-- Botão 2 -->
+        <Button
+            android:id="@+id/btPesquisar"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pesquisar"/>
+
+        <!-- Botão 3 -->
+        <Button
+            android:id="@+id/btAtualizar"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Atualizar"/>
+
+        <!-- Botão 4 -->
+        <Button
+            android:id="@+id/btExcluir"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Excluir"/>
+    </LinearLayout>
+
+</RelativeLayout>
